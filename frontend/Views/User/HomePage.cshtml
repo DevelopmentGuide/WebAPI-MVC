@@ -1,0 +1,76 @@
+@{
+    ViewBag.Title = "HomePage";
+}
+
+<style>
+    .subSection a {
+        font-size: 25px;
+        font-weight: 600;
+        text-align: center;
+    }
+</style>
+
+@if (@ViewBag.LogMessage == "admin@localhost")
+{
+    <h1>@ViewBag.LogMessage</h1>
+    <h1>@ViewBag.UserID</h1>
+    <div class="mainSection">
+        <h2>@Html.Raw(@ViewBag.Message)</h2>
+        <div class="subSection">
+            <a asp-controller="User" asp-action="ControlPannel">
+                Administration
+            </a>
+        </div>
+    </div>
+}
+else if (@ViewBag.LogMessage != null)
+{
+    <div class="mainSection">
+
+        <div class="subSection">
+            <a asp-controller="Order" asp-action="Order" asp-route-id=@ViewBag.LogMessage>
+                Order
+            </a>
+        </div>
+
+        <div class="subSection">
+            <a asp-controller="ContactUs" asp-action="ContactUs">
+                ContactUs
+            </a>
+        </div>
+
+    </div>
+
+
+    <div class="mainSection">
+
+        <div class="subSection">
+            <a asp-controller="Order" asp-action="MyOrder" asp-route-id=@ViewBag.LogMessage>
+                My Orders
+            </a>
+        </div>
+
+    </div>
+}
+else if (@ViewBag.LogMessage == null)
+{
+    <style>
+        #customNav {
+            background-color: #f5f4e9;
+        }
+
+        body,
+        html {
+            background-color: #f5f4e9;
+        }
+    </style>
+
+    <div class="mainSection" style="box-shadow: none; margin-top:200px">
+        <img src="https://i.pinimg.com/originals/43/b7/88/43b788696f1888284f0f321fd0af022a.gif" alt="load">
+    </div>
+    <script>
+        setTimeout(function () {
+            window.location.href = 'https://localhost:5002/Error/NotLoggedIn';
+        }, 1000);
+    </script>
+}

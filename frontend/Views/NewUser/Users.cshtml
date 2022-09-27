@@ -1,0 +1,37 @@
+@{
+    ViewBag.Title = "Users";
+}
+@model List<Users>
+
+<div style="justify-content: space-between; display: flex;">
+    <a class="btn btn-success" asp-controller="NewUser" asp-action="Create">CREATE <i class="fa-solid fa-plus"></i></a>
+</div>
+
+<table class="table table-striped pushDown">
+    <thead>
+        <tr>
+            <th>FirstName</th>
+            <th>LastName</th>
+            <th>Email</th>
+            <th>Role</th>
+            <th>Action</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>@item.FirstName</td>
+                <td>@item.LastName</td>
+                <td>@item.Email</td>
+                <td>@item.Role</td>
+                <td>
+                    <a class="btn btn-primary" asp-controller="NewUser" asp-action="Edit"
+                    asp-route-id="@item.UserId">EDIT</a>
+                    <a class="btn btn-danger" asp-controller="NewUser" asp-action="Delete"
+                    asp-route-id="@item.UserId">DELETE</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

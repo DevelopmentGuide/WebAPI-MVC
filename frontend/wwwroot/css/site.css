@@ -1,0 +1,387 @@
+.contactButton {
+  border: none !important;
+}
+
+.contactButton:hover {
+  filter: brightness(1.1) !important;
+}
+
+.barItem a:hover {
+  filter: brightness(1.1) !important;
+}
+
+.logOutBTN {
+  background-color: var(--red) !important;
+  box-shadow: none !important;
+}
+
+.logOutBTN:hover {
+  box-shadow: 0 0px 10px rgba(179, 0, 0, 0.7) !important;
+}
+
+.logoLink {
+  color: var(--accent);
+  text-decoration: none;
+  padding: 5px;
+  font-size: 30px;
+  transition: 0.2s;
+  border: 2px solid var(--accentdim2);
+  border-radius: 20px;
+  margin-right: 10px;
+  background-color: white !important;
+}
+
+.logoLink img {
+  width: 50px;
+  border-radius: 50%;
+  filter: brightness(1.1);
+  transition: 0.15s;
+  box-shadow: none;
+  border: none;
+}
+
+.logoLink:hover {
+  color: var(--accent);
+  filter: brightness(1.1);
+  transition: 0.2s;
+  box-shadow: var(--shadowtiny);
+}
+
+.logoLink a:hover {
+  color: var(--accent);
+  filter: brightness(1.1);
+  transition: 0.2s;
+}
+
+.contactForm {
+  box-shadow: var(--shadowtiny) !important;
+}
+
+/* ONE */
+
+.containerMod {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container1 h1 {
+  font-size: 80px;
+  font-weight: 700;
+  text-align: center;
+  color: var(--accent);
+  margin-top: 10%;
+}
+
+.container1 h2 {
+  font-size: 50px;
+  font-weight: 600;
+  text-align: center;
+  color: #0aa6a6;
+  margin-bottom: 18%;
+}
+
+.container2 {
+  display: block;
+  text-align: center;
+  background-color: #12c2c21f;
+  color: var(--accent);
+  width: 100% !important;
+  padding-top: 50px;
+  padding-bottom: 5%;
+}
+
+.container3 {
+  display: block;
+  text-align: center;
+  background-color: #12c2c22b;
+  color: var(--accent);
+  width: 100% !important;
+  padding-top: 50px;
+  padding-bottom: 5%;
+}
+
+.moveDownLink {
+  text-align: center;
+  font-size: 45px;
+  width: 100%;
+  color: var(--accent);
+  text-decoration: none;
+}
+
+.pagecomp {
+  padding-top: 50px;
+  margin-left: 50px;
+  text-align: left;
+}
+
+.pagecomp h5 {
+  font-size: 40px;
+  font-weight: 700;
+  color: var(--accentdark);
+  margin-bottom: 10px;
+}
+
+.pagecomp h6 {
+  font-size: 25px;
+  color: var(--accent);
+}
+
+.pagecomp {
+  display: flex !important;
+}
+
+.pagecomp img {
+  width: 140px;
+  height: 140px;
+  margin-right: 50px;
+}
+
+.textSection {
+  display: block
+}
+
+.textSection h5 {
+  margin-top: 20px;
+}
+
+.padRL {
+  padding-left: 20%;
+  padding-right: 20%;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-around !important;
+  height: 45%;
+  align-items: flex-start;
+  margin-top: 50px;
+}
+
+.centreText {
+  text-align: center;
+}
+
+.appLink {
+  display: block !important;
+}
+
+.appLink a {
+  text-decoration: none;
+  color: var(--accent);
+  font-size: 30px;
+  transition: 0.1s;
+}
+
+.appLink a:hover {
+  color: var(--accentdark);
+  transition: 0.1s;
+}
+
+.appLink img {
+  width: 140px;
+  height: 70px;
+}
+
+.footerLogo {
+  height: 5% !important;
+  display: block;
+  text-align: center;
+}
+
+.footerLogo h5 {
+  margin: 20px;
+}
+
+/*  */
+.headerText {
+  color: var(--accent);
+  font-size: 40px;
+  margin-bottom: 30px;
+}
+
+/*  */
+
+.sectioN {
+  background-color: rgb(255, 222, 222);
+  color: var(--reddark);
+  width: 100%;
+  margin-top: 0%;
+  display: block;
+  text-align: center;
+}
+
+.sectioN h1 {
+  font-size: 80px;
+}
+
+.sectioN h2 {
+  font-size: 30px;
+}
+
+/*  */
+
+.subSection h1 {
+  font-size: 35px;
+  font-weight: 700;
+  text-transform: capitalize;
+
+  margin: 0px;
+  margin-bottom: 10px;
+  text-align: left;
+
+  color: var(--accentdark);
+}
+
+.subSection a {
+  color: var(--accent);
+  text-decoration: none;
+  padding: 5px;
+  background-color: var(--accentdim2);
+  border-radius: 5px;
+  font-style: italic;
+}
+
+.subSection p {
+  margin: 0px;
+  margin-top: 20px;
+  padding-left: 10px;
+
+  text-align: left;
+  font-size: 20px;
+  font-weight: 500;
+  color: var(--accentdark);
+  border: 1px solid rgb(194, 238, 255);
+  background-color: rgb(241, 251, 255);
+
+  border-left: 5px solid var(--accentdim0);
+  border-radius: 5px;
+}
+
+/*  */
+.sectioNG {
+  background-color: rgb(214, 255, 204);
+  padding: 50px;
+  border-radius: 100px;
+  color: green;
+}
+
+/*  */
+details>summary {
+  padding: 5px 10px !important;
+  text-align: center;
+  width: 200px;
+  border-radius: 10px;
+  transition: 0.15s;
+  background-color: var(--accent);
+  color: var(--white);
+  cursor: pointer;
+}
+
+details>summary .active {
+  background-color: var(--accentdark);
+  box-shadow: var(--shadowtiny);
+}
+
+details>summary:hover {
+  filter: brightness(1.1);
+  border-radius: 5px;
+  box-shadow: var(--shadowtiny);
+  transition: 0.15s;
+}
+
+details>p {
+  background-color: var(--accentdim2) !important;
+  border-radius: 10px;
+  margin: 5px 0px !important;
+  padding: 4px;
+  margin: 0;
+}
+
+details>p:hover {
+  border-radius: 5px;
+  box-shadow: var(--shadowtiny);
+  transition: 0.15s;
+}
+
+.emailLink {
+  text-decoration: none;
+  color: var(--accent);
+  font-size: 15px;
+  transition: 0.2s;
+}
+
+kbd {
+  border: 1px solid var(--accent);
+  background-color: var(--accentdim1) !important;
+  color: var(--black);
+  font-weight: 800;
+  font-size: 15px;
+  cursor: default;
+  user-select: none;
+}
+
+
+/*  */
+.dateForm {
+  border: none !important;
+  cursor: pointer;
+  box-shadow: 1px 1px 1px rgba(38, 160, 8, 0.2);
+  transition: 0.1s;
+}
+
+.dateForm:hover {
+  box-shadow: 3px 3px 3px rgba(38, 160, 8, 0.2);
+  transition: 0.1s;
+}
+
+.calIcon {
+  margin: 10px;
+  font-size: 35px;
+  color: #1dc57b;
+}
+
+.dateFormRed {
+  border: none !important;
+  cursor: pointer;
+  box-shadow: 1px 1px 1px rgba(255, 0, 0, 0.2);
+  transition: 0.1s;
+}
+
+.dateFormRed:hover {
+  box-shadow: 3px 3px 3px rgba(255, 0, 0, 0.2);
+  transition: 0.1s;
+}
+
+.calIconRed {
+  margin: 10px;
+  font-size: 35px;
+  color: #ff0000;
+}
+
+
+#customNav {
+  background-color: #12c2c20c !important;
+}
+
+.PassWord {
+  display: flex !important;
+  justify-content: space-between !important;
+}
+
+.PassWord input {
+  width: 90% !important;
+}
+
+.PassWord i {
+  width: 10% !important;
+  font-size: 20px;
+  color: var(--accent);
+  margin: 0px !important;
+  padding-top: 20px !important;
+  cursor: pointer;
+}
+
+.PassWord i:hover {
+  filter: brightness(1.4);
+}

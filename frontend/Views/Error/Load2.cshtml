@@ -1,0 +1,23 @@
+﻿@{
+    ViewData["Title"] = "Loading...";
+}
+
+<style>
+    #customNav {
+        background-color: #f5f4e9;
+    }
+
+    body,
+    html {
+        background-color: #f5f4e9;
+    }
+</style>
+
+<div class="mainSection" style="box-shadow: none; margin-top:200px">
+    <img src="https://i.pinimg.com/originals/43/b7/88/43b788696f1888284f0f321fd0af022a.gif" alt="load">
+</div>
+<script>
+    setTimeout(function () {
+        window.location.href = 'https://localhost:5002/Error/Error404';
+    }, 1000);
+</script>

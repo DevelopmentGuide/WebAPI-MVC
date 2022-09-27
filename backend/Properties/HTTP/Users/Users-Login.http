@@ -1,0 +1,5 @@
+# Login
+
+POST https://localhost:5001/api/authenticate HTTP/1.1
+Authorization: Basic admin@localhost:Passcode1
+

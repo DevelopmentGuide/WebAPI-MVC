@@ -1,0 +1,90 @@
+@{
+    ViewBag.Title = "ControlPannel";
+}
+
+<style>
+    .subSection a {
+        font-size: 25px;
+        font-weight: 600;
+        text-align: center;
+        margin-bottom: 30px;
+        background-color: white;
+        border-radius: 10px;
+        border: 2px solid var(--accentdim1);
+        transition: 0.2s;
+    }
+
+    .subSection a:hover {
+        box-shadow: var(--shadowtiny);
+        transition: 0.2s;
+    }
+
+    .subSection h1 {
+        color: var(--accentdark);
+        text-align: center;
+    }
+
+    .subSection {
+        justify-content: center;
+        text-align: center;
+        width: 400px;
+    }
+</style>
+
+
+@if (@ViewBag.LogMessage == "admin@localhost")
+{
+    <div class="mainSection">
+        <h2>@Html.Raw(@ViewBag.Message)</h2>
+        <div class="subSection">
+            <h1>User administration</h1> <br>
+
+            <a asp-controller="NewUser" asp-action="Users">
+                Users
+            </a>
+        </div>
+    </div>
+    <div class="mainSection">
+        <div class="subSection">
+            <h1>Care</h1> <br>
+
+            <a asp-controller="ContactUs" asp-action="Index">
+                Messages
+            </a>
+
+        </div>
+    </div>
+
+    <div class="mainSection">
+        <div class="subSection">
+            <h1>Management</h1> <br>
+
+            <a asp-controller="Order" asp-action="Index">
+                Orders Recieved
+            </a>
+
+        </div>
+    </div>
+}
+else
+{
+    <style>
+        #customNav {
+            background-color: #f5f4e9;
+        }
+
+        body,
+        html {
+            background-color: #f5f4e9;
+        }
+    </style>
+
+    <div class="mainSection" style="box-shadow: none; margin-top:200px">
+        <img src="https://i.pinimg.com/originals/43/b7/88/43b788696f1888284f0f321fd0af022a.gif" alt="load">
+    </div>
+    <script>
+        setTimeout(function () {
+            window.location.href = 'https://localhost:5002/Error/Error401';
+        }, 2000);
+    </script>
+}

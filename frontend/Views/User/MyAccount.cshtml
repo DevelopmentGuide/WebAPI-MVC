@@ -1,0 +1,53 @@
+@{
+    ViewBag.Title = "MyAccount";
+}
+
+<style>
+    .subSection a {
+        font-size: 25px;
+        font-weight: 600;
+        text-align: center;
+    }
+</style>
+
+
+@if (@ViewBag.LogMessage != null)
+{
+    <div class="mainSection">
+
+        <div class="subSection">
+            <a asp-controller="NewUser" asp-action="EditByMail" asp-route-id="@ViewBag.LogMessage">
+                Edit Details
+            </a>
+        </div>
+
+        <div class="subSection">
+            <a asp-controller="NewUser" asp-action="DeleteByMail" asp-route-id="@ViewBag.LogMessage">
+                Delete Account
+            </a>
+        </div>
+
+    </div>
+}
+else if (@ViewBag.LogMessage == null)
+{
+    <style>
+        #customNav {
+            background-color: #f5f4e9;
+        }
+
+        body,
+        html {
+            background-color: #f5f4e9;
+        }
+    </style>
+
+    <div class="mainSection" style="box-shadow: none; margin-top:200px">
+        <img src="https://i.pinimg.com/originals/43/b7/88/43b788696f1888284f0f321fd0af022a.gif" alt="load">
+    </div>
+    <script>
+        setTimeout(function () {
+            window.location.href = 'https://localhost:5002/Error/NotLoggedIn';
+        }, 1000);
+    </script>
+}

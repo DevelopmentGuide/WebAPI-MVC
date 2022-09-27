@@ -1,0 +1,33 @@
+@{
+    ViewBag.Title = "Edit - " + @Model.FirstName;
+}
+@model Users
+
+
+<form asp-action="Edit" asp-controller="NewUser" method="post" class="contactForm">
+    <h1 class="headerText">Edit - @Model.FirstName</h1>
+
+    <fieldset>
+        <div class="row">
+            <input asp-for="UserId" hidden readonly />
+        </div>
+        <div class="row">
+            <input asp-for="FirstName" placeholder="FirstName" />
+        </div>
+        <div class="row">
+            <input asp-for="LastName" placeholder="LastName" />
+        </div>
+        <div class="row">
+            <input asp-for="Email" placeholder="Email" />
+        </div>
+        <div class="form-group row PassWord">
+            <input asp-for="Password" placeholder="Password" type="password" id="PassWord" />
+            <i class="fa-sharp fa-solid fa-eye" id="PassWordIcon"></i>
+        </div>
+        <div class="row">
+            <button type="submit" class="btn btn-primary">Save</button>
+        </div>
+    </fieldset>
+    <h6 style="color:green">@Html.Raw(@ViewBag.Message)</h6>
+
+</form>
