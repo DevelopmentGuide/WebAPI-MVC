@@ -1,0 +1,44 @@
+﻿@{
+    ViewBag.Title = "Orders Recieved";
+}
+@model List<Order>
+<style>
+    main,
+    body,
+    html,
+    .container {
+        width: 100% !important;
+        max-width: 10000px;
+        height: 100% !important;
+        padding: 0px !important;
+        margin: 0px !important;
+        margin-top: 65px !important;
+    }
+</style>
+<table class="table table-condensed table-striped  table-hover pushDown padRL">
+    <thead>
+        <tr>
+            <th style="width: 5%;">TransactionId</th>
+            <th style="width: 10%;">MemberId</th>
+            <th style="width: 10%;">ProductName</th>
+            <th style="width: 10%;">RequiredDate</th>
+            <th style="width: 10%;">Quantities</th>
+            <th style="width: 10%;">UserId</th>
+            <th style="width: 10%;">Email</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td style="width: 5%;">@item.TransactionId</td>
+                <td style="width: 10%;">@item.MemberId</td>
+                             <td style="width: 10%;">@item.ProductName</td>
+                                <td style="width: 10%;">@item.RequiredDate</td>
+                <td style="width: 10%;">@item.Quantities</td>
+                <td style="width: 10%;">@item.UserId</td>
+                <td style="width: 10%;"><a href="mailto:@item.Email" class="emailLink">@item.Email</a></td>
+            </tr>
+        }
+    </tbody>
+</table>

@@ -10,6 +10,7 @@ namespace BackendAPI.Models
         }
         public DbSet<Users> User { get; set; }
         public DbSet<ContactUs> ContactMsg { get; set; }
+        public DbSet<Order> Orders { get; set; }
 
         // GIVING PREDIFINED DATA TO DATABASE 
         // CREATING ADMIN USER
@@ -35,6 +36,18 @@ namespace BackendAPI.Models
                     Name = "sample",
                     Email = "sample@localhost",
                     Message = "Hello, I am sample user. I am facing some issues with the website. Please help me out."
+                });
+
+            // ADDING DEFAULT ORDER DATA
+            modelBuilder.Entity<Order>().HasData(
+                new Order
+                {
+                    TransactionId = 1,
+                    MemberId = 1,
+                    ProductName = "Product",
+                    RequiredDate = DateTime.Now,
+                    Quantities = 100,
+                    UserId = 1
                 });
         }
     }

@@ -1,0 +1,39 @@
+@{
+    ViewBag.Title = "Send Order";
+}
+@model Order
+
+<form asp-action="Order" asp-controller="Order" method="post" class="contactForm">
+
+    <h1 class="headerText" style="color:#1dc57b">Send your order</h1>
+
+    <div class="form-group">
+        <input asp-for="MemberId" type="text" class="form-control" id="MemberId" placeholder="Enter your MemberId">
+    </div>
+    <div class="form-group">
+        <input asp-for="ProductName" type="text" class="form-control" id="ProductName" placeholder="Enter ProductName">
+    </div>
+    <div class="form-group" style="display: flex;">
+        <input asp-for="RequiredDate" type="text" class="form-control datedropper-init dateForm" id="date-input"
+            data-dd-large="true" data-dd-theme="leaf" style="width:80%" placeholder="Enter RequiredDate">
+        <i class=" fa-regular fa-calendar-plus calIcon"></i>
+    </div>
+
+    <div class="form-group">
+        <input asp-for="Quantities" type="text" class="form-control" id="Quantities" placeholder="Enter Quantities">
+    </div>
+    <div class="form-group">
+        <input asp-for="UserId" type="text" class="form-control" id="UserId" placeholder="Enter UserId" required>
+    </div>
+
+    <button type="submit" class="contactButton" style="background-color:#1dc57b; box-shadow:none ">Submit</button>
+
+</form>
+
+<script>
+    $('#date-input').dateDropper({
+        large: true,
+        minDate: '01/01/2022',
+        theme: 'leaf'
+    });
+</script>

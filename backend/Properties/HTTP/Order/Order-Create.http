@@ -1,0 +1,12 @@
+# Create Order
+
+POST https://localhost:5001/api/order/
+Content-Type: application/json
+
+{
+  "MemberId":"2434",
+  "ProductName": "ICICI",
+  "RequiredDate": "1999-11-18T06:30:00",
+  "Quantities": 2,
+  "UserId":1
+}
