@@ -1,0 +1,10 @@
+# Contact - Send Message
+
+POST https://localhost:5001/api/ContactUs HTTP/1.1
+Content-Type: application/json
+
+{
+  "name": "test",
+  "email": "test@mail.com",
+  "message": "this is a sample message from sample"
+}

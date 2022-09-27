@@ -1,0 +1,17 @@
+﻿@{
+    ViewBag.Title = "Contacts";
+}
+@model List<ContactUs>
+
+
+<div class="mainSection">
+    @foreach (var item in Model)
+    {
+        <div class="subSection">
+            <h1>@item.Name</h1>
+            <a href="mailto:@item.Email">@item.Email</a>
+            <p>@item.Date</p>
+            <p>@item.Message</p>
+        </div>
+    }
+</div>

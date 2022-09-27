@@ -1,0 +1,22 @@
+@{
+    ViewBag.Title = "ContactUs";
+}
+@model ContactUs
+
+<form asp-action="ContactUs" asp-controller="ContactUs" method="post" class="contactForm">
+    <h1 class="headerText">ContactUs</h1>
+    <div class="form-group">
+        <input asp-for="Name" type="text" class="form-control" id="name" placeholder="Enter your name">
+    </div>
+    <div class="form-group">
+        <input asp-for="Date" type="text" class="form-control" id="date" value=@DateTime.Today.ToString("d") hidden>
+    </div>
+    <div class="form-group">
+        <input asp-for="Email" type="email" class="form-control" id="email" placeholder="Enter email">
+    </div>
+    <div class="form-group">
+        <textarea asp-for="Message" class="form-control" id="message" rows="3"
+            placeholder="Enter your message"></textarea>
+    </div>
+    <button type="submit" class="contactButton">Submit</button>
+</form>
