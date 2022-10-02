@@ -30,51 +30,51 @@ namespace BackendAPI.Controllers
         }
 
 
-        // GET ORDERS
+        // GET ALL
         [Authorize(Roles = "Admin")]
-        [HttpGet("order")]
-        public IEnumerable<UserOrder> GetOrder()
+        [HttpGet("Order")]
+        public IEnumerable<UserOrder> Get()
         {
-            var usersOrder = from o in order_context.Set<Order>()
-                             join u in order_context.Set<Users>()
-                             on o.UserId equals u.UserId
-                             select new UserOrder
-                             {
-                                 TransactionId = o.TransactionId,
+            var u_o_Joint = from o in order_context.Set<Order>()
+                            join u in order_context.Set<Users>()
+                            on o.UserId equals u.UserId
+                            select new UserOrder
+                            {
+                                TransactionId = o.TransactionId,
 
-                                 MemberId = o.MemberId,
-                                 ProductName = o.ProductName,
-                                 RequiredDate = o.RequiredDate,
-                                 Quantities = o.Quantities,
-                                 UserId = o.UserId,
-                                 FirstName = u.FirstName,
-                                 LastName = u.LastName,
-                                 Email = u.Email,
-                             };
-            return usersOrder.ToList();
+                                MemberId = o.MemberId,
+                                ProductName = o.ProductName,
+                                RequiredDate = o.RequiredDate,
+                                Quantities = o.Quantities,
+                                UserId = o.UserId,
+                                FirstName = u.FirstName,
+                                LastName = u.LastName,
+                                Email = u.Email,
+                            };
+            return u_o_Joint.ToList();
         }
 
         [HttpGet("email/{email}")]
-        public IEnumerable<UserOrder> GetOrderById(string email)
+        public IEnumerable<UserOrder> GetById(string email)
         {
-            var usersOrder = from o in order_context.Set<Order>()
-                             join u in order_context.Set<Users>()
-                             on o.UserId equals u.UserId
-                             select new UserOrder
-                             {
-                                 TransactionId = o.TransactionId,
+            var u_o_Joint = from o in order_context.Set<Order>()
+                            join u in order_context.Set<Users>()
+                            on o.UserId equals u.UserId
+                            select new UserOrder
+                            {
+                                TransactionId = o.TransactionId,
 
-                                 MemberId = o.MemberId,
-                                 ProductName = o.ProductName,
-                                 RequiredDate = o.RequiredDate,
-                                 Quantities = o.Quantities,
+                                MemberId = o.MemberId,
+                                ProductName = o.ProductName,
+                                RequiredDate = o.RequiredDate,
+                                Quantities = o.Quantities,
 
-                                 UserId = o.UserId,
-                                 FirstName = u.FirstName,
-                                 LastName = u.LastName,
-                                 Email = u.Email,
-                             };
-            return usersOrder.ToList().Where(x => x.Email == email);
+                                UserId = o.UserId,
+                                FirstName = u.FirstName,
+                                LastName = u.LastName,
+                                Email = u.Email,
+                            };
+            return u_o_Joint.ToList().Where(x => x.Email == email);
         }
 
     }

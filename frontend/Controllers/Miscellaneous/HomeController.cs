@@ -12,12 +12,5 @@ namespace Frontend.Controllers
             ViewBag.LogMessage = HttpContext.Session.GetString("UserName");
             return View();
         }
-
-        public IActionResult Team()
-        {
-            ViewBag.LogMessage = HttpContext.Session.GetString("UserName");
-            return View();
-        }
-
     }
 }

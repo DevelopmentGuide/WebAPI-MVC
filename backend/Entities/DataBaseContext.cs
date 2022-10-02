@@ -24,6 +24,20 @@ namespace BackendAPI.Models
                     Email = "admin@localhost",
                     Password = "Passcode1",
                     Role = Roles.Admin
+                },
+                new Users
+                {
+                    UserId = 2,
+                    Email = "member1@localhost",
+                    Password = "Passcode1",
+                    Role = Roles.Member
+                },
+                new Users
+                {
+                    UserId = 3,
+                    Email = "member2@localhost",
+                    Password = "Passcode1",
+                    Role = Roles.Member
                 }
                 );
 
@@ -43,11 +57,20 @@ namespace BackendAPI.Models
                 new Order
                 {
                     TransactionId = 1,
-                    MemberId = 1,
-                    ProductName = "Product",
+                    MemberId = 78125687,
+                    ProductName = "Sample ProductOne",
                     RequiredDate = DateTime.Now,
                     Quantities = 100,
-                    UserId = 1
+                    UserId = 2
+                },
+                new Order
+                {
+                    TransactionId = 2,
+                    MemberId = 23458975,
+                    ProductName = "Sample ProductTwo",
+                    RequiredDate = DateTime.Now,
+                    Quantities = 150,
+                    UserId = 3
                 });
         }
     }
