@@ -2,15 +2,6 @@
     ViewBag.Title = "MyAccount";
 }
 
-<style>
-    .subSection a {
-        font-size: 25px;
-        font-weight: 600;
-        text-align: center;
-    }
-</style>
-
-
 @if (@ViewBag.LogMessage != null)
 {
     <div class="mainSection">
@@ -29,21 +20,8 @@
 
     </div>
 }
-
 else if (@ViewBag.LogMessage == null)
-
 {
-    <style>
-        #customNav {
-            background-color: #f5f4e9;
-        }
-
-        body,
-        html {
-            background-color: #f5f4e9;
-        }
-    </style>
-
     <div class="mainSection" style="box-shadow: none; margin-top:200px">
         <img src="https://github.com/dependabot-pr/Static-Files/raw/main/Assets/spinner.gif" alt="load">
     </div>

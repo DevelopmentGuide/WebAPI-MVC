@@ -1,279 +1,381 @@
+body {
+    margin-top: 85px !important;
+}
+
 /* ContactForm */
+form p {
+    color: var(--red);
+    font-weight: 700;
+}
+
 .contactButton {
-  border: none !important;
+    border: none !important;
 }
 
 .contactButton:hover {
-  filter: brightness(1.1) !important;
+    filter: brightness(1.1) !important;
 }
 
 .barItem a:hover {
-  filter: brightness(1.1) !important;
+    filter: brightness(1.1) !important;
 }
 
 .logOutBTN {
-  background-color: var(--red) !important;
-  box-shadow: none !important;
+    background-color: var(--red) !important;
+    color: white;
+    box-shadow: none !important;
+    padding: 6px 15px !important;
+    margin-right: 10px;
+    margin-left: 10px;
+
+    border-radius: 10px;
+
+    font-size: 20px;
+    font-weight: 600;
+
+    transition: 0.15s;
 }
 
 .logOutBTN:hover {
-  box-shadow: 0 0px 10px rgba(179, 0, 0, 0.7) !important;
+    color: white !important;
+    background-color: var(--accent);
+    box-shadow: 0 0px 10px rgba(179, 0, 0, 0.7) !important;
+
+    filter: brightness(1.3);
+
+    border-radius: 5px;
+    transition: 0.15s;
 }
 
 .logoLink {
-  color: var(--accent);
-  text-decoration: none;
-  padding: 5px;
-  font-size: 30px;
-  transition: 0.2s;
-  border: 2px solid var(--accentdim2);
-  border-radius: 20px;
-  margin-right: 10px;
-  background-color: white !important;
+    color: var(--accent);
+    text-decoration: none;
+    padding: 5px;
+    font-size: 30px;
+    transition: 0.2s;
+    border: 2px solid var(--accentdim2);
+    border-radius: 20px;
+    margin-right: 10px;
+    background-color: white !important;
 }
 
 .logoLink img {
-  width: 50px;
-  border-radius: 50%;
-  filter: brightness(1.1);
-  transition: 0.15s;
-  box-shadow: none;
-  border: none;
+    width: 50px;
+    border-radius: 50%;
+    filter: brightness(1.1);
+    transition: 0.15s;
+    box-shadow: none;
+    border: none;
 }
 
 .logoLink:hover {
-  color: var(--accent);
-  filter: brightness(1.1);
-  transition: 0.2s;
-  box-shadow: var(--shadowtiny);
+    color: var(--accent);
+    filter: brightness(1.1);
+    transition: 0.2s;
+    box-shadow: var(--shadowtiny);
 }
 
 .logoLink a:hover {
-  color: var(--accent);
-  filter: brightness(1.1);
-  transition: 0.2s;
+    color: var(--accent);
+    filter: brightness(1.1);
+    transition: 0.2s;
 }
 
 .contactForm {
-  box-shadow: var(--shadowtiny) !important;
+    box-shadow: var(--shadowtiny) !important;
 }
 
 /* Index */
 
 .padRL {
-  padding-left: 20%;
-  padding-right: 20%;
+    padding-left: 20%;
+    padding-right: 20%;
 }
 
 .containerMod {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .container1 h1 {
-  font-size: 80px;
-  font-weight: 700;
-  text-align: center;
-  color: var(--accent);
-  margin-top: 10%;
+    font-size: 80px;
+    font-weight: 700;
+    text-align: center;
+    color: var(--accent);
+    margin-top: 10%;
 }
 
 .container1 h2 {
-  font-size: 50px;
-  font-weight: 600;
-  text-align: center;
-  color: #0aa6a6;
-  margin-bottom: 18%;
+    font-size: 50px;
+    font-weight: 600;
+    text-align: center;
+    color: #0aa6a6;
+    margin-bottom: 18%;
 }
 
 .footer {
-  display: flex;
-  justify-content: space-around !important;
-  height: 45%;
-  align-items: flex-start;
-  margin-top: 50px;
+    display: flex;
+    justify-content: space-around !important;
+    height: 45%;
+    align-items: flex-start;
+    margin-top: 50px;
 }
 
 .footerLogo {
-  height: 5% !important;
-  display: block;
-  text-align: center;
+    height: 5% !important;
+    display: block;
+    text-align: center;
 }
 
 .footerLogo h5 {
-  margin: 20px;
+    margin: 20px;
+}
+
+.subSection a {
+    font-size: 25px !important;
+    font-weight: 600 !important;
+    text-align: center !important;
+    margin-bottom: 30px !important;
+    background-color: white !important;
+    border-radius: 10px !important;
+    border: 2px solid var(--accentdim1) !important;
+    transition: 0.2s !important;
+}
+
+.subSection a:hover {
+    box-shadow: var(--shadowtiny) !important;
+    transition: 0.2s !important;
+}
+
+.subSection h1 {
+    margin-bottom: 30px !important;
+    color: var(--accentdark) !important;
+    text-align: center !important;
+}
+
+.subSection {
+    justify-content: center !important;
+    text-align: center !important;
+    width: 400px !important;
 }
 
 /*  */
 .headerText {
-  color: var(--accent);
-  font-size: 40px;
-  margin-bottom: 30px;
+    color: var(--accent);
+    font-size: 40px;
+    margin-bottom: 30px;
 }
 
 /* Messages & Errors */
 
 .sectioN {
-  background-color: rgb(255, 222, 222);
-  color: var(--reddark);
-  width: 100%;
-  margin-top: 0%;
-  display: block;
-  text-align: center;
+    background-color: rgb(255, 222, 222);
+    color: var(--reddark);
+    width: 100%;
+    height: 100vh;
+    margin-top: -85px;
+    padding-top: 10%;
+    display: block;
+    text-align: center;
 }
 
 .sectioN h1 {
-  font-size: 80px;
+    font-size: 80px;
 }
 
 .sectioN h2 {
-  font-size: 30px;
+    font-size: 30px;
 }
 
 .sectioNG {
-  background-color: rgb(214, 255, 204);
-  padding: 50px;
-  border-radius: 100px;
-  color: green;
+    background-color: rgb(214, 255, 204);
+    color: green;
 }
 
 /* Pages */
 
 .subSection h1 {
-  font-size: 35px;
-  font-weight: 700;
-  text-transform: capitalize;
+    font-size: 35px;
+    font-weight: 700;
+    text-transform: capitalize;
 
-  margin: 0px;
-  margin-bottom: 10px;
-  text-align: left;
+    margin: 0px;
+    margin-bottom: 10px;
+    text-align: left;
 
-  color: var(--accentdark);
+    color: var(--accentdark);
 }
 
 .subSection a {
-  color: var(--accent);
-  text-decoration: none;
-  padding: 5px;
-  background-color: var(--accentdim2);
-  border-radius: 5px;
-  font-style: italic;
+    color: var(--accent);
+    text-decoration: none;
+    padding: 5px;
+    background-color: var(--accentdim2);
+    border-radius: 5px;
+    font-style: italic;
 }
 
 .subSection p {
-  margin: 0px;
-  margin-top: 20px;
-  padding-left: 10px;
+    margin: 0px;
+    margin-top: 20px;
+    padding-left: 10px;
 
-  text-align: left;
-  font-size: 20px;
-  font-weight: 500;
-  color: var(--accentdark);
-  border: 1px solid rgb(194, 238, 255);
-  background-color: rgb(241, 251, 255);
+    text-align: left;
+    font-size: 20px;
+    font-weight: 500;
+    color: var(--accentdark);
+    border: 1px solid rgb(194, 238, 255);
+    background-color: rgb(241, 251, 255);
 
-  border-left: 5px solid var(--accentdim0);
-  border-radius: 5px;
+    border-left: 5px solid var(--accentdim0);
+    border-radius: 5px;
 }
 
 /*  */
 details>summary {
-  padding: 5px 10px !important;
-  text-align: center;
-  width: 200px;
-  border-radius: 10px;
-  transition: 0.15s;
-  background-color: var(--accent);
-  color: var(--white);
-  cursor: pointer;
+    padding: 5px 10px !important;
+    text-align: center;
+    width: 200px;
+    border-radius: 10px;
+    transition: 0.15s;
+    background-color: var(--accent);
+    color: var(--white);
+    cursor: pointer;
 }
 
 details>summary .active {
-  background-color: var(--accentdark);
-  box-shadow: var(--shadowtiny);
+    background-color: var(--accentdark);
+    box-shadow: var(--shadowtiny);
 }
 
 details>summary:hover {
-  filter: brightness(1.1);
-  border-radius: 5px;
-  box-shadow: var(--shadowtiny);
-  transition: 0.15s;
+    filter: brightness(1.1);
+    border-radius: 5px;
+    box-shadow: var(--shadowtiny);
+    transition: 0.15s;
 }
 
 details>p {
-  background-color: var(--accentdim2) !important;
-  border-radius: 10px;
-  margin: 5px 0px !important;
-  padding: 4px;
-  margin: 0;
+    background-color: var(--accentdim2) !important;
+    border-radius: 10px;
+    margin: 5px 0px !important;
+    padding: 4px;
+    margin: 0;
 }
 
 details>p:hover {
-  border-radius: 5px;
-  box-shadow: var(--shadowtiny);
-  transition: 0.15s;
+    border-radius: 5px;
+    box-shadow: var(--shadowtiny);
+    transition: 0.15s;
 }
 
 .emailLink {
-  text-decoration: none;
-  color: var(--accent);
-  font-size: 15px;
-  transition: 0.2s;
+    text-decoration: none;
+    color: var(--accent);
+    font-size: 15px;
+    transition: 0.2s;
 }
 
 kbd {
-  border: 1px solid var(--accent);
-  background-color: var(--accentdim1) !important;
-  color: var(--black);
-  font-weight: 800;
-  font-size: 15px;
-  cursor: default;
-  user-select: none;
+    border: 1px solid var(--accent);
+    background-color: var(--accentdim1) !important;
+    color: var(--black);
+    font-weight: 800;
+    font-size: 15px;
+    cursor: default;
+    user-select: none;
+}
+
+.ReadOnly input {
+    border: none !important;
+    cursor: default;
+}
+
+.subSection a {
+    font-size: 25px;
+    font-weight: 600;
+    text-align: center;
 }
 
 
 /*  */
 .dateForm {
-  border: none !important;
-  cursor: pointer;
-  box-shadow: 1px 1px 1px rgba(38, 160, 8, 0.2);
-  transition: 0.1s;
+    border: none !important;
+    cursor: pointer;
+    box-shadow: 1px 1px 1px rgba(38, 160, 8, 0.2);
+    transition: 0.1s;
 }
 
 .dateForm:hover {
-  box-shadow: 3px 3px 3px rgba(38, 160, 8, 0.2);
-  transition: 0.1s;
+    box-shadow: 3px 3px 3px rgba(38, 160, 8, 0.2);
+    transition: 0.1s;
 }
 
 .calIcon {
-  margin: 10px;
-  font-size: 35px;
-  color: #1dc57b;
+    margin: 10px;
+    font-size: 35px;
+    color: #1dc57b;
 }
 
 #customNav {
-  background-color: #12c2c20c !important;
+    background-color: #12c2c20c !important;
 }
 
 .PassWord {
-  display: flex !important;
-  justify-content: space-between !important;
+    display: flex !important;
+    justify-content: space-between !important;
 }
 
 .PassWord input {
-  width: 90% !important;
+    width: 90% !important;
 }
 
 .PassWord i {
-  width: 10% !important;
-  font-size: 20px;
-  color: var(--accent);
-  margin: 0px !important;
-  padding-top: 20px !important;
-  cursor: pointer;
+    width: 10% !important;
+    font-size: 20px;
+    color: var(--accent);
+    margin: 0px !important;
+    padding-top: 20px !important;
+    cursor: pointer;
 }
 
 .PassWord i:hover {
-  filter: brightness(1.4);
+    filter: brightness(1.4);
+}
+
+
+/* google sign in */
+.GoogleSignIn {
+    margin: 10px;
+    display: flex;
+    width: 220px;
+}
+
+button {
+    border: none;
+    padding: 0px;
+    background-color: white;
+}
+
+.GoogleSignIn img {
+    width: 35px;
+    height: 35px;
+    margin: 5px;
+}
+
+.GoogleSignIn .GText {
+    background-color: #4285f4;
+    color: white;
+    padding: 10px;
+    margin-left: 10px;
+    border-radius: 0 5px 5px 0;
+    font-size: 15px;
+    font-weight: 600;
+    transition: 0.2s;
+}
+
+.GoogleSignIn:hover .GText {
+    filter: brightness(1.2);
+    transition: 0.2s;
 }
