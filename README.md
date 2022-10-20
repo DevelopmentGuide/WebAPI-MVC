@@ -1,5 +1,17 @@
 # WebAPI-MVC
 
+### Technologies
+Language    | Framework     | Database 
+----------- | -----------   | ----------
+<img src="https://raw.githubusercontent.com/dependabot-pr/Static-Files/main/Assets/Logo/Technologies/CSharp.svg" alt="drawing" width="75" /> | <img src="https://raw.githubusercontent.com/dependabot-pr/Static-Files/main/Assets/Logo/Technologies/dotNET.svg" alt="drawing" width="75"/> | <img src="https://raw.githubusercontent.com/dependabot-pr/Static-Files/main/Assets/Logo/Technologies/SQL.svg" alt="drawing" width="75"/> |
+CSharp      | dotNet        | SQL Server
+
+### To Start
+[backend](./backend/README.md#backend)
+
+[frontend](./frontend/README.md#frontend)
+
+
 ### KeyWords
 
 1. ContactUs
